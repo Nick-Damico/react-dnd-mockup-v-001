@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,h2,h3,h4,h5 {margin-bottom: 0;}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.hero__card {
+  display: flex;
+  max-width: 400px;
+}
+
+h1 {
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.character__origin {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.character__description {
+  margin-top: 0;
+}
+
+.character__details {
+  text-align: left;
+  padding: 20px 15px;
+}
+
+.character__traits {
+  font-size: 0.9rem;
+}
+
+.character__traits li {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  margin-top: 5px;
+}
