@@ -16,6 +16,7 @@ export default class CharacterCard extends React.Component {
           origin={this.props.character.origin}
           description={this.props.character.description}
           racialTraits={this.props.character.racialTraits}
+          pic={this.props.character.image}
         />
       </div>
     )

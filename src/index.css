@@ -19,12 +19,19 @@ h1,h2,h3,h4,h5 {margin-bottom: 0;}
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  overflow-x: hidden;
 }
-
+header {
+  margin-bottom: 15px;
+}
 
 .hero__card {
   display: flex;
-  max-width: 400px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  max-width: 370px;
+  margin: 15px;
 }
 
 h1 {
@@ -42,8 +49,14 @@ h1 {
 }
 
 .character__details {
+  display: flex;
   text-align: left;
   padding: 20px 15px;
+}
+.character__photo_container img {
+  width: 170px;
+  margin-top: -35px;
+  margin-right: -39px;
 }
 
 .character__traits {
