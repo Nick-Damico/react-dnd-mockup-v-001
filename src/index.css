@@ -17,13 +17,12 @@ ul {
 h1,h2,h3,h4,h5 {margin-bottom: 0;}
 
 main {
+  margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   overflow-x: hidden;
-}
-header {
-  margin-bottom: 15px;
+  background: url('./images/rocky-wall.png') repeat;
 }
 
 .hero__card {
@@ -39,8 +38,8 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.character__origin {
-  font-size: 0.8rem;
+h1 .character__origin {
+  font-size: 0.725rem;
   color: grey;
 }
 

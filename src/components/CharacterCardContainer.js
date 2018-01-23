@@ -12,14 +12,14 @@ export default class CharacterContainer extends React.Component {
   }
 
   render() {
-    const characterCardComponents = this.state.characters.map(character =>
+    const CharacterCards = this.state.characters.map(character =>
       <CharacterCard
         character={character}
       />
     )
     return (
       <main className="character__container">
-        {characterCardComponents}
+        {CharacterCards}
       </main>
     )
   }

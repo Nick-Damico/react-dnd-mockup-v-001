@@ -1,23 +1,35 @@
 import React from 'react';
 
-import CardDetails from './CardDetails';
 
 export default class CharacterCard extends React.Component {
-  constructor(props) {
-    super(props);
-
-  }
 
   render() {
+    const { name, origin, description, racialTraits, image } = this.props.character;
+    const traitLis = racialTraits.map((trait,i) => {
+        return <li key={i}>{trait},</li>
+    })
+
     return(
       <div className="hero__card">
-        <CardDetails
-          name={this.props.character.name}
-          origin={this.props.character.origin}
-          description={this.props.character.description}
-          racialTraits={this.props.character.racialTraits}
-          pic={this.props.character.image}
-        />
+        <div className="character__details">
+          <div className="character__info">
+            <h1>
+              {name} <br />
+              <span className="character__origin">{origin}</span>
+            </h1>
+
+            <p className="character__description">
+              {description}
+            </p>
+            <ul className="character__traits">
+              <h4>Racial Traits</h4>
+              {traitLis}
+            </ul>
+          </div>
+          <div className="character__photo_container">
+            <img src={image} alt={name} />
+          </div>
+        </div>
       </div>
     )
   }

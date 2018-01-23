@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import CharacterContainer from './components/characterContainer';
+import CharacterCardContainer from './components/CharacterCardContainer';
 import './App.css';
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">D&amp;D Character APP</h1>
         </header>
-        <CharacterContainer />
+        <CharacterCardContainer />
       </div>
     );
   }
