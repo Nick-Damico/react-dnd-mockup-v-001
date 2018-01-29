@@ -10,3 +10,15 @@ The artwork and information is borrowed from DnDBeyond.com.
 
 Testing environment uses NPM packages:
   - selenium-standalone
+  - nightwatch
+
+## Testing Startup
+
+Using console start selenium-standalone:
+`selenium-standalone start`
+
+A tab running application:
+`npm start`
+
+And a tab running nightwatch:
+`nightwatch`
